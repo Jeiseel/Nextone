@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editeText_cadastro_nome"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:ems="10"
+        android:hint="Digite seu nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editeText_cadastro_email"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editeText_cadastro_nome"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Digite seu email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editeText_cadastro_senha"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:background="@android:color/black"
+        android:text="CADASTRAR"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

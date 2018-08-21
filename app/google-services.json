@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "538517439597",
+    "firebase_url": "https://nextone-1f6ab.firebaseio.com",
+    "project_id": "nextone-1f6ab",
+    "storage_bucket": "nextone-1f6ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538517439597:android:6ccbc4a132ea269b",
+        "android_client_info": {
+          "package_name": "com.android.nextone.firebaseapp.nextone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538517439597-kinthmulf4f20t6979p1macj1ol5ot5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.nextone.firebaseapp.nextone",
+            "certificate_hash": "43a90eda39dc364b79acd05404f7eec8d4f99a66"
+          }
+        },
+        {
+          "client_id": "538517439597-a2kqevnrhjpcourgins2uq71h9l03qbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhmoXX6NVCgIsH5M_cGLezzfFMc3BeL4Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538517439597-a2kqevnrhjpcourgins2uq71h9l03qbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
