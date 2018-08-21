@@ -22,13 +22,13 @@ public class Taxista {
     public HashMap<Object, Object> toMap(){
         HashMap<String ing, Object> hashMapTaxista = new HashMap<>();
 
-        hashMapTaxista.put("Nome", getNome());
+        hashMapTaxista.put("Nme", getNome());
         hashMapTaxista.put("Sobrenome", getSobrenome());
         hashMapTaxista.put("Email", getEmail());
         hashMapTaxista.put("Senha",getSenha());
         hashMapTaxista.put("CNH", getCnh());
         hashMapTaxista.put("Placa Do Carro", getPlacaCarro());
-        hashMapTaxista.put("Codigo", getCod());
+        hashMapTaxista.put("igo", getCod());
 
         return hashMapTaxista;
     }
