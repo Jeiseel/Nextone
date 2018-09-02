@@ -31,6 +31,7 @@ public class Taxista {
         this.cnh="";
         this.placaCarro="";
         this.cod="";
+        this.qtdViagens = 0;
     }
 
     //public HashMap<Object, Object> toMap(){
@@ -112,6 +113,6 @@ public class Taxista {
     }
 
     public String toString(){
-        return "Taxista:" + this.nome + "\n CNH: " + this.cnh + "\n Placa Do Carro" + this.placaCarro;
+        return "Taxista:" + this.nome + "\n CNH: " + this.cnh + "\n Placa Do Carro" + this.placaCarro + "\n Quantidade de viagens:" + this.qtdViagens;
     }
 }
