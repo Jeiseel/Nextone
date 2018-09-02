@@ -4,34 +4,48 @@ import java.util.HashMap;
 
 public class Taxista {
 
-    private String nome ="";
-    private String sobrenome = "";
-    private String email ="";
-    private String senha ="";
-    private String cnh ="";
-    private String placaCarro ="";
-    private String cod = "";
+    private String nome;
+    private String sobrenome;
+    private String email;
+    private String senha;
+    private String cnh;
+    private String placaCarro;
+    private String cod;
+    private int qtdViagens;
     private HashMap<Object, Object> hashMapTaxista;
 
+    public Taxista(String nome, String sobrenome, String cnh, String placaCarro, String cod){
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.cnh = cnh;
+        this.placaCarro = placaCarro;
+        this.cod = cod;
+        this.qtdViagens =0;
+    }
+
     public Taxista(){
+        this.nome="";
+        this.sobrenome="";
+        this.email="";
+        this.senha="";
+        this.cnh="";
+        this.placaCarro="";
+        this.cod="";
     }
 
-    public void salvar(){
-    }
+    //public HashMap<Object, Object> toMap(){
+        //HashMap<String ing, Object> hashMapTaxista = new HashMap<>();
 
-    public HashMap<Object, Object> toMap(){
-        HashMap<String ing, Object> hashMapTaxista = new HashMap<>();
+        //hashMapTaxista.put("Nme", getNome());
+        //hashMapTaxista.put("Sobrenome", getSobrenome());
+        //hashMapTaxista.put("Email", getEmail());
+        //hashMapTaxista.put("Senha",getSenha());
+        //hashMapTaxista.put("CNH", getCnh());
+        //hashMapTaxista.put("Placa Do Carro", getPlacaCarro());
+        //hashMapTaxista.put("igo", getCod());
 
-        hashMapTaxista.put("Nme", getNome());
-        hashMapTaxista.put("Sobrenome", getSobrenome());
-        hashMapTaxista.put("Email", getEmail());
-        hashMapTaxista.put("Senha",getSenha());
-        hashMapTaxista.put("CNH", getCnh());
-        hashMapTaxista.put("Placa Do Carro", getPlacaCarro());
-        hashMapTaxista.put("igo", getCod());
-
-        return hashMapTaxista;
-    }
+        //return hashMapTaxista;
+    //}
 
     public String getNome() {
         return nome;
@@ -87,5 +101,17 @@ public class Taxista {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public int getQtdViagens(){
+        return qtdViagens;
+    }
+
+    public void setQtdViagens(int qtdViagens){
+        this.qtdViagens = qtdViagens;
+    }
+
+    public String toString(){
+        return "Taxista:" + this.nome + "\n CNH: " + this.cnh + "\n Placa Do Carro" + this.placaCarro;
     }
 }
