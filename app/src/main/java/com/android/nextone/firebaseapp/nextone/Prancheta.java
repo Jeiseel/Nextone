@@ -70,5 +70,4 @@ public class Prancheta {
      }
      throw new PracaNaoExisteException("Não Esxiste Praça com esse nome" +nomeDaPraça );
     }
-
 }

@@ -39,7 +39,4 @@ public class Cidade {
     public String toString(){
         return "Cidade" + this.nomeCidade+ "\n Cep:" +this.cep;
     }
-
-
-
 }

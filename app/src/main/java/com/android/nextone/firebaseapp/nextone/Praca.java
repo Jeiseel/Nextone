@@ -32,8 +32,12 @@ public class Praca {
         return this.nomeDaPraça;
     }
 
+    public int setMaxTaxistas(int maxTaxistas){
+        return this.maxTaxistas = maxTaxistas;
+    }
+
+
     public String toString(){
         return "Praça:" + this.nomeDaPraça + "Quantidade de Taxistas:" + this.maxTaxistas;
     }
-
 }
