@@ -34,20 +34,6 @@ public class Taxista {
         this.qtdViagens = 0;
     }
 
-    //public HashMap<Object, Object> toMap(){
-        //HashMap<String ing, Object> hashMapTaxista = new HashMap<>();
-
-        //hashMapTaxista.put("Nme", getNome());
-        //hashMapTaxista.put("Sobrenome", getSobrenome());
-        //hashMapTaxista.put("Email", getEmail());
-        //hashMapTaxista.put("Senha",getSenha());
-        //hashMapTaxista.put("CNH", getCnh());
-        //hashMapTaxista.put("Placa Do Carro", getPlacaCarro());
-        //hashMapTaxista.put("igo", getCod());
-
-        //return hashMapTaxista;
-    //}
-
     public String getNome() {
         return nome;
     }

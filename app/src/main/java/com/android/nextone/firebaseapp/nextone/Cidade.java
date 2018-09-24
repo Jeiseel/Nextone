@@ -6,12 +6,14 @@ import java.util.List;
 public class Cidade {
     private List<Cidade> cidades;
     private List<Praca> pracas;
+    private String nomeCidade;
     private String cep;
 
-    public Cidade(String cep){
+    public Cidade(String cep, String nomeCidade){
         this.cidades = new ArrayList<Cidade>();
         this.pracas = new ArrayList<Praca>();
         this.cep = cep;
+        this.nomeCidade = nomeCidade;
     }
 
     public String getCep(String cep){
@@ -33,6 +35,11 @@ public class Cidade {
     public void adicionaPracaNaCidade(Praca pracas){
         this.pracas.add(pracas);
     }
+
+    public String toString(){
+        return "Cidade" + this.nomeCidade+ "\n Cep:" +this.cep;
+    }
+
 
 
 }
