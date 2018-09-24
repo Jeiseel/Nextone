@@ -20,7 +20,7 @@ public class Praca {
         return this.taxista;
     }
 
-    public void adicionarTaxista(Taxista taxista){
+    public void adicionarTaxistaPraca(Taxista taxista){
         this.taxista.add(taxista);
     }
 
