@@ -3,7 +3,7 @@ package com.android.nextone.firebaseapp.nextone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Prancheta {
+public class Prancheta implements SistemaPrancheta {
 
     private List<Taxista> taxistas;
     private List<Praca> pracas;
@@ -20,6 +20,17 @@ public class Prancheta {
         }
         this.taxistas.add(taxista);
     }
+
+    @Override
+    public Taxista pesquisaTaxistaPorPlaca(String placaCarro) throws TaxistaNaoExisteException {
+        for (Taxista y: this.taxistas){
+            if(y.getPlacaCarro().equals(placaCarro)){
+                return y;
+            }
+        }
+        throw new TaxistaNaoExisteException("Não Foi encontrado nem um taxista com essa CNH!!\"");
+    }
+
     //Remove taxista da lista pegando sua CNH.
     public void removeTaxistaDaLista(String cnh) {
         for (int k = 0; k < taxistas.size(); k++) {
@@ -40,15 +51,7 @@ public class Prancheta {
         }
         throw new TaxistaNaoExisteException("Não Foi encontrado nem um taxista com essa CNH!!");
     }
-    //metodo que pesquisa taxista por sua placa do carro. ou retorna exceção.
-    public Taxista pesquisaTaxistaPorPlacaCarro(String placaCarro) throws TaxistaNaoExisteException {
-        for (Taxista y : this.taxistas) {
-            if (y.getPlacaCarro().equals(placaCarro)) {
-                return y;
-            }
-        }
-        throw new TaxistaNaoExisteException("Não Foi encontrado nem um taxista com essa CNH!!\"");
-    }
+
         //Cadastra a praça por nome e com sua quantidade de menbros.
     public void cadastraPraca(String nomeDaPraça, int maxTaxistas) throws PracaJaCadastradaException {
         Praca praca = new Praca(nomeDaPraça, maxTaxistas);
@@ -71,7 +74,7 @@ public class Prancheta {
      throw new PracaNaoExisteException("Não Esxiste Praça com esse nome" +nomeDaPraça );
     }
     //Exclui Praça.
-    public void removePraca(String nomePraca){
+    public void removePraca(String nomePraca)throws PracaNaoExisteException{
         Praca aux;
         for(int i=0; i<pracas.size(); i++){
             aux = pracas.get(i);
@@ -79,5 +82,6 @@ public class Prancheta {
                 pracas.remove(i);
             }
         }
+        throw new PracaNaoExisteException("Não Existe Praça com esse nome" + nomePraca);
     }
 }

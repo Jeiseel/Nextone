@@ -6,6 +6,7 @@ public interface SistemaPrancheta {
     public Taxista pesquisaTaxistaPorPlaca(String placaCarro) throws TaxistaNaoExisteException;
     public Taxista pesquisaTaxista(String cnh) throws TaxistaNaoExisteException;
     public void removeTaxistaDaLista(String cnh);
+    public void removePraca(String nomePraca) throws PracaNaoExisteException;
 
 
 }
