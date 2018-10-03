@@ -70,7 +70,7 @@ public class Prancheta {
      }
      throw new PracaNaoExisteException("Não Esxiste Praça com esse nome" +nomeDaPraça );
     }
-
+    //Exclui Praça.
     public void removePraca(String nomePraca){
         Praca aux;
         for(int i=0; i<pracas.size(); i++){
